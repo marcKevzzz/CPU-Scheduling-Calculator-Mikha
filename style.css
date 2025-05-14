@@ -1,0 +1,123 @@
+body {
+  background-color: #f5ca0b;
+}
+.cpu-header {
+  border-radius: 16px;
+  padding: 12px 20px;
+  margin: 0 auto;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.384);
+  box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.dropdown-arrow {
+  width: 8px;
+  height: 8px;
+  background-color: #92400e;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.click-btn {
+  background-color: #f59e0b;
+  border-radius: 30px;
+
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 4px;
+}
+.clear {
+  background-color: #f5260b;
+}
+.cpu-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f59e0b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+@media (max-width: 768px) {
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  .cpu-header {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (1300px > width > 1023px) {
+  .grid.grid-cols-1 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.slashed {
+  position: relative;
+  display: inline-block;
+}
+.slashed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  height: 2px;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.753);
+  transform: rotate(25deg);
+}
+
+.left {
+  margin-left: -40px;
+}
+
+#ganttChart {
+  overflow: hidden;
+}
+
+#timeline {
+  white-space: nowrap;
+  align-items: flex-end;
+  position: relative;
+  width: fit-content;
+}
+
+.timeline-block {
+  border-radius: 4px;
+  border: none;
+  position: relative;
+}
+
+.timeline-vrline {
+  width: calc(100% - 70px);
+  border-top: 3px solid #92400e;
+  position: absolute;
+  top: 48%;
+  left: 35px;
+}
+
+.line {
+  width: 0;
+  border-left: 1px solid #000000;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
